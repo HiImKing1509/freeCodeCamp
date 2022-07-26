@@ -5,3 +5,247 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #ffffbf;
+    flex-direction: column;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffcc00;
+    width: 100%;
+}
+
+#logo {
+    width: 60vw;
+}
+
+#logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#nav-bar {
+    display: block;
+    margin-right: 50px;
+}
+
+#nav-bar > ul {
+    width: 32vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-bar > ul > li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: large;
+    color: #13064f;
+    height: 75px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 75px;
+}
+
+section > h2 {
+    color: #13064f;
+}
+
+section > form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+form #email {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #13064f;
+}
+
+form #submit {
+    width: 100%;
+    max-width: 150px;
+    align-self: center;
+    background-color: #13064f;
+    border: 1px solid #13064f;
+    padding: 10px;
+    font-size: large;
+    font-weight: 900;
+    border-radius: 5px;
+    color: #ffcc00;
+}
+
+form #submit:hover {
+    cursor: pointer;
+    background-color: #ffcc00;
+    color: #13064f;
+    border-color: #ffcc00;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    color: #13064f;
+}
+
+div.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: #ffcc00;
+}
+
+div.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+}
+
+#works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#works #video {
+    height: 400px;
+    width: 700px;
+}
+
+#prices {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#prices .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #13064f;
+    border-radius: 3px;
+}
+
+#prices .product .product-description {
+    background-color: #13064f;
+    color: #ffcc00;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#prices .product h2 {
+    color: #13064f;
+    margin: 20px 0;
+    font-size: 32px;
+}
+
+#prices .product ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#prices .product button {
+    width: 100%;
+    max-width: 150px;
+    align-self: center;
+    background-color: #13064f;
+    border: none;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ffcc00;
+    margin: 20px 0;
+}
+#prices .product button:hover {
+    background-color: #ffcc00;
+    color: #13064f;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: #13064f;
+    padding: 20px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 20px;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+footer p {
+    color: #ffcc00;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 40px 5px 40px;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+
+@media (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+}
