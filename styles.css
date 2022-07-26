@@ -244,8 +244,45 @@ footer p {
     letter-spacing: 1.2px;
 }
 
-@media (max-width: 767px) {
-    body {
-        width: 100%;
+@media (max-width: 1024px) {
+    #header {
+        flex-direction: column;
+    }
+    #logo {
+        margin: 10px 0;
+        width: 60vw;
+    }
+    #nav-bar > ul {
+        margin: 10px 0;
+        flex-direction: column;
+        width: 40vw;
+    }
+    section {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    section > form {
+        width: 300px;
+    }
+
+    div.description {
+        width: 60vw;
+        margin: 5px;
+        margin-bottom: 20px;
+        /* padding: 5px; */
+    }
+
+    #prices {
+        flex-direction: column;
+    }
+    #prices .product {
+        width: calc(70%);
+        margin: 20px auto;
     }
 }
